@@ -1,0 +1,17 @@
+---
+- name: install php5-fpm packages
+  apt: name=$item state=installed
+  with_items:
+    - php5-cli
+    - php5-fpm
+    - php5-mysql
+    - php-pear
+    - php-apc
+
+- name: require php exact path match
+  shell: sed -i "s|^\;cgi\.fix_pathinfo=.*$|cgi.fix_pathinfo=0|g" /etc/php5/fpm/php.ini
+
+- name: fpm listen on socket
+  shell: sed -i "s|^listen \= .*$|listen = /var/run/php5-fpm.sock|g" /etc/php5/fpm/pool.d/www.conf
+  notify:
+    - restart php5-fpm

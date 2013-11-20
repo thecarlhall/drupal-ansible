@@ -1,0 +1,14 @@
+---
+- hosts: all
+  sudo: true
+
+  vars:
+    server_name: drupal-test.local
+    server_root: /opt/drupal-test
+
+  roles:
+    - common
+    - mariadb
+    - php5-fpm
+    - nginx
+    - drupal

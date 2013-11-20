@@ -1,0 +1,3 @@
+---
+mariadb:
+  apt_url: 'deb http://ftp.osuosl.org/pub/mariadb/repo/10.0/ubuntu raring main'
