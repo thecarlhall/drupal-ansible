@@ -9,8 +9,8 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   config.vm.provision :ansible do |ansible|
-    ansible.playbook = "provision/drupal-single.yml"
-    #ansible.inventory_path = "provision/inventories/ansible_hosts"
+    ansible.playbook = "drupal-single.yml"
+    #ansible.inventory_path = "inventories/ansible_hosts"
     ansible.sudo = true
     ansible.verbose = 'v'
   end
