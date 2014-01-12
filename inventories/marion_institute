@@ -1,0 +1,9 @@
+[web]
+192.241.253.161
+
+[web:vars]
+server_name=test.marioninstitute.org
+server_root=/var/www/drupal
+
+[db]
+192.241.253.161
