@@ -1,8 +1,0 @@
----
-- name: install nginx
-  apt: name=nginx state=present
-
-#- name: update nginx config to use socket location
-
-- name: start nginx
-  service: name=nginx state=started

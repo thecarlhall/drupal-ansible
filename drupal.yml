@@ -1,0 +1,14 @@
+---
+- hosts: web
+  sudo: true
+
+  roles:
+    - php5-fpm
+    - nginx
+    - drupal
+
+- hosts: db
+  sudo: true
+
+  roles:
+    - mariadb
