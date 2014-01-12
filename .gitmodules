@@ -1,0 +1,15 @@
+[submodule "roles/drush"]
+	path = roles/drush
+	url = git@github.com:thecarlhall/ansible-drush.git
+[submodule "roles/mariadb"]
+	path = roles/mariadb
+	url = git@github.com:thecarlhall/ansible-mariadb.git
+[submodule "roles/nginx"]
+	path = roles/nginx
+	url = git@github.com:thecarlhall/ansible-nginx.git
+[submodule "roles/php5-fpm"]
+	path = roles/php5-fpm
+	url = git@github.com:thecarlhall/ansible-php5-fpm.git
+[submodule "roles/drupal"]
+	path = roles/drupal
+	url = git@github.com:thecarlhall/ansible-drupal.git
