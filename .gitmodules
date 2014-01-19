@@ -4,9 +4,6 @@
 [submodule "roles/mariadb"]
 	path = roles/ansible-mariadb
 	url = git@github.com:thecarlhall/ansible-mariadb.git
-[submodule "roles/nginx"]
-	path = roles/ansible-nginx
-	url = git@github.com:thecarlhall/ansible-nginx.git
 [submodule "roles/php5-fpm"]
 	path = roles/ansible-php5-fpm
 	url = git@github.com:thecarlhall/ansible-php5-fpm.git
